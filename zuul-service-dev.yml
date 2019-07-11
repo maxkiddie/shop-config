@@ -16,7 +16,6 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true  #当你获取host时，返回的不是主机名，而是ip
-    ip-address: 127.0.0.1
 zuul:
   prefix: /api # 添加路由前缀
   retryable: true
