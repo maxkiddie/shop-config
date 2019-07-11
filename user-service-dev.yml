@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: user-service
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    base-url: http://localhost:9411
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/shop?characterEncoding=UTF-8&useSSL=false
     username: root
